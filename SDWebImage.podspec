@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name = 'SDWebImage'
-  s.version = '5.18.8'
+  s.name = 'SDWebImage2'
+  s.version = '6.0.0'
 
   s.osx.deployment_target = '10.11'
   s.ios.deployment_target = '9.0'
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
     'SUPPORTS_MACCATALYST' => 'YES',
     'DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER' => 'NO'
   }
